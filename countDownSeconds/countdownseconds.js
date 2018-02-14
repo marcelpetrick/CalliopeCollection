@@ -1,7 +1,7 @@
 let activated = 0
 let counter = 0
 input.onButtonPressed(Button.A, () => {
-    counter = 20 * 60
+    counter = 15 * 60
     activated = 1
 })
 input.onButtonPressed(Button.B, () => {
@@ -11,8 +11,8 @@ basic.forever(() => {
     if (activated > 0) {
         basic.setLedColor(Colors.Green)
         while (counter >= 0) {
-            basic.showNumber(counter)
-            basic.pause(1000)
+            // basic.showNumber(counter)
+            basic.pause(999)
             counter += -1
         }
         activated = 0
