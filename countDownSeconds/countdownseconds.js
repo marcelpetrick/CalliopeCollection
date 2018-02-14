@@ -1,7 +1,7 @@
 let activated = 0
 let counter = 0
 input.onButtonPressed(Button.A, () => {
-    counter = 5
+    counter = 20 * 60
     activated = 1
 })
 input.onButtonPressed(Button.B, () => {
@@ -9,6 +9,7 @@ input.onButtonPressed(Button.B, () => {
 })
 basic.forever(() => {
     if (activated > 0) {
+        basic.setLedColor(Colors.Green)
         while (counter >= 0) {
             basic.showNumber(counter)
             basic.pause(1000)
@@ -16,5 +17,6 @@ basic.forever(() => {
         }
         activated = 0
         music.playTone(262, music.beat(BeatFraction.Whole))
+        basic.setLedColor(Colors.Red)
     }
 })
