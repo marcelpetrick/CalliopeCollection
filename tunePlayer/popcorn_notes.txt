@@ -1,0 +1,9 @@
+a-g-a-e-c-e-a--a-g-a-e-c-e-a--a-b-c-b-c-c-a-d-a-d-d-g-a-a-g-a--
+a-g-a-e-c-e-a--a-g-a-e-c-e-a--a-b-cb-c-c-a-d-a-d-d-g-a-a-g-a-b-c-e-d-e-c-a-c-g-
+e-d-e-c-a-c-g--e-f#-g-f#-e-e
+
+
+t=140
+		8c2 8#a1 8c2 8g1 8#d1 8g1 8c1 8-
+		8c2 8#a1 8c2 8g1 8#d1 8g1 8c1 8-
+		8c2 8d2 8#d2 8d2 8#d2 8c2 8d2 8c2 8d2 8#a1 8c2 8#a1 8c2 8#a1 8c2 8-
