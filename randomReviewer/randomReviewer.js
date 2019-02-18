@@ -23,7 +23,7 @@ input.onButtonPressed(Button.A, () => {
         . . . . .
         . . . . .
         `)
-    music.beginMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)
+    music.beginMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)
     reviewer = namesExternal[Math.random(namesExternal.length + 1)]
     for (let Platzhalter2 = 0; Platzhalter2 <= 2; Platzhalter2++) {
         basic.showString(reviewer)
