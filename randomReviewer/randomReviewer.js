@@ -1,6 +1,6 @@
 let reviewer = ""
 let namesAll: string[] = []
-let namesExternal: string[] = []
+let namesInternal: string[] = []
 input.onButtonPressed(Button.B, () => {
     basic.showLeds(`
         . . . . .
@@ -23,13 +23,13 @@ input.onButtonPressed(Button.A, () => {
         . . . . .
         . . . . .
         `)
-    music.beginMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)
-    reviewer = namesExternal[Math.random(namesExternal.length + 1)]
+    music.beginMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)
+    reviewer = namesInternal[Math.random(namesInternal.length + 1)]
     for (let Platzhalter2 = 0; Platzhalter2 <= 2; Platzhalter2++) {
         basic.showString(reviewer)
     }
 })
-namesExternal = ["RNI", "NLE", "MLA"]
+namesInternal = ["GSC", "HGA", "MSA", "NKU", "MDR", "MPE"]
 namesAll = ["RNI", "NLE", "MLA", "GSC", "HGA", "MSA", "NKU", "MDR", "MPE"]
 basic.forever(() => {
     basic.showLeds(`
