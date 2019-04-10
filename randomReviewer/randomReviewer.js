@@ -2,9 +2,9 @@
 // found at: https://makecode.calliope.cc/
 
 let namesAll: string[] = []
+let namesInternal: string[] = []
 let item = 0
 let reviewer = ""
-let namesInternal: string[] = []
 let Platzhalter = 0
 input.onButtonPressed(Button.A, () => {
     basic.showLeds(`
@@ -28,17 +28,18 @@ input.onButtonPressed(Button.B, () => {
         . . . . .
         `)
     reviewer = namesAll[Math.random(namesAll.length + 1)]
-    for (let Platzhalter = 0; Platzhalter <= 2; Platzhalter++) {
+    for (let Platzhalter3 = 0; Platzhalter3 <= 2; Platzhalter3++) {
         basic.showString(reviewer)
     }
 })
+Platzhalter = 0
 namesInternal = ["GSC", "HGA", "MSA", "NKU", "MDR", "MPE"]
 namesAll = namesInternal
 namesAll.push("RNI")
 namesAll.push("NLE")
 basic.forever(() => {
-    for (let Platzhalter = 0; Platzhalter <= 8; Platzhalter++) {
+    for (let Platzhalter4 = 0; Platzhalter4 <= 32; Platzhalter4++) {
         item += Math.random(namesAll.length + 1)
     }
-    basic.showString("lumi" + input.lightLevel())
+    basic.showString("" + input.temperature() + "°C")
 })
