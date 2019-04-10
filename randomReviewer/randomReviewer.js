@@ -1,3 +1,6 @@
+//javascript for the calliope editor
+// found at: https://makecode.calliope.cc/
+
 let reviewer = ""
 let namesAll: string[] = []
 let namesInternal: string[] = []
@@ -30,7 +33,9 @@ input.onButtonPressed(Button.A, () => {
     }
 })
 namesInternal = ["GSC", "HGA", "MSA", "NKU", "MDR", "MPE"]
-namesAll = ["RNI", "NLE", "MLA", "GSC", "HGA", "MSA", "NKU", "MDR", "MPE"]
+namesAll = namesInternal
+namesAll.push("RNI")
+namesAll.push("NLE")
 basic.forever(() => {
     basic.showLeds(`
         . . . . .
