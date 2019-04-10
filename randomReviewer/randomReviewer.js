@@ -1,6 +1,5 @@
 //javascript for the calliope editor
 // found at: https://makecode.calliope.cc/
-
 let item = 0
 let reviewer = ""
 let namesAll: string[] = []
@@ -38,8 +37,8 @@ namesAll = namesInternal
 namesAll.push("RNI")
 namesAll.push("NLE")
 basic.forever(() => {
-    basic.showString("lumi:" + input.lightLevel())
-    basic.showString("heading:" + input.compassHeading())
-    basic.showString("temp:" + input.temperature())
+    basic.showString("lumi" + input.lightLevel())
+    basic.showString("hdg" + input.compassHeading())
+    basic.showString("temp" + input.temperature())
     item += Math.random(namesAll.length + 1)
 })
