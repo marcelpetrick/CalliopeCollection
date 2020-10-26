@@ -23,7 +23,7 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 startTime = 0
 programState = 0
 maxProgramState = 3
-maxDuration = 6 # minutes
+maxDuration = 10 # minutes; green tea 3; fruity tea 8 (so for the sake of it, the user can use 1..9)
 duration = 1
 basic.turn_rgb_led_off()
 
