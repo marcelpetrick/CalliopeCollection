@@ -26,15 +26,16 @@ def readHumidity():
     pins.digital_write_pin(DigitalPin.P0, 0) # off
     serial.write_value("humidity:", humidity)
 
-    # map the value and then display it as bar to the screen
+    # map the value and then display it as bar to the screen (todo)
     mappedHumi = Math.map(humidity, observableMin, observableMax, 0, 9) // 1 # to make it an int; not double
-    basic.show_number(mappedHumi)
+    #basic.show_number(mappedHumi)
+    basic.show_string(mappedHumi + " (" + str(humidity) + ")")
 
-    # fancy led
+    # fancy led-color-change for each measurement
     ledColor = Math.random() * 2**24 // 1
     #serial.write_value("color", ledColor)
     basic.set_led_color(__internal.__colorNumberPicker(ledColor))
 
-    basic.pause(1024 - 10 - 10)
+    basic.pause(1024 - 10 - 10) # one second minus the measurement duration
 
 basic.forever(readHumidity)
