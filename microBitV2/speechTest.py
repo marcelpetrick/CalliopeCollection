@@ -1,6 +1,7 @@
 import speech
 import random
 import microbit
+from microbit import *
 
 def sayText():
     # from the docu at https://microbit-micropython.readthedocs.io/en/v1.0.1/tutorials/speech.html
@@ -15,15 +16,17 @@ def sayText():
     "An epidemic that comprehends"]
     
     for line in text:
-        speech.say(line, speed=110, pitch=200, throat=50, mouth=200)
-        microbit.sleep(333)
+        speech.say(line, speed=90, pitch=200, throat=50, mouth=200)
+        microbit.sleep(500)
 
 while True:
     if microbit.button_a.is_pressed():
-        #display.show(Image.SAD)
+        display.show(Image.SAD)
         sayText()
-        #display.clear()
+        display.clear()
     elif microbit.button_b.is_pressed():
-        microbit.display.scroll("B")
+        display.show(Image.HAPPY)
+        microbit.sleep(500)
+        display.clear()
         
     microbit.sleep(100)
